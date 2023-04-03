@@ -1,10 +1,15 @@
-
+import { NavBar, Projects, Skills, AboutMe, ContactMe, Footer } from './components'
 
 function App() {
 
   return (
-    <div className="App">
-      
+    <div className="">
+      <NavBar />
+      <Projects />
+      <Skills />
+      <AboutMe />
+      <ContactMe />
+      <Footer />
     </div>
   )
 }
