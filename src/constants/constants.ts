@@ -1,4 +1,5 @@
 import { aghReactjs, agh, chevysonic, fitness, GPT3, madMovies, realEstate, signOut, tamagotchi, techCityOshawa, theSweetGroceries, travel } from '../aseets/project_covers';
+import volodymyrImg from '../aseets/volodymyr.jpeg';
 
 export const navLinks = [
     {
@@ -127,5 +128,142 @@ export const projects = [
         buildWith: 'Custom WordPress theme, WooCommerce',
         link: 'http://agh.volodymyrdc.ca/',
         img: agh
+    },
+]
+
+export const webDevSkills = [
+    {
+        id: 'frontend',
+        title: 'Front End',
+        skillslist: [
+            {
+                id: '1',
+                skill: 'React.js'
+            },
+            {
+                id: '2',
+                skill: 'Tailwind.CSS'
+            },
+            {
+                id: '3',
+                skill: 'Material-UI'
+            },
+            {
+                id: '4',
+                skill: 'JavaScript'
+            },
+            {
+                id: '5',
+                skill: 'Typescript'
+            },
+            {
+                id: '6',
+                skill: 'HTML 5 & CSS 3'
+            },
+            {
+                id: '7',
+                skill: 'Rapid API & REST API,'
+            },
+            {
+                id: '8',
+                skill: 'Next.js'
+            },
+            {
+                id: '9',
+                skill: 'VUE.js'
+            },
+            {
+                id: '10',
+                skill: 'WordPress'
+            },
+        ]
+    },
+    {
+        id: 'backend',
+        title: 'Back End',
+        skillslist: [
+            {
+                id: '1',
+                skill: 'Firebase'
+            },
+            {
+                id: '2',
+                skill: 'Formspark | Form Submission'
+            },
+            {
+                id: '3',
+                skill: 'PHP'
+            },
+            {
+                id: '4',
+                skill: 'MySQL'
+            },
+        ]
+    },
+    {
+        id: 'webdesign',
+        title: 'Web Design',
+        skillslist: [
+            {
+                id: '1',
+                skill: 'Photoshop'
+            },
+            {
+                id: '2',
+                skill: 'Figma'
+            },
+            {
+                id: '3',
+                skill: 'Illustrator'
+            },
+            {
+                id: '4',
+                skill: 'Lightroom'
+            },
+            {
+                id: '5',
+                skill: 'Premier Pro'
+            },
+        ]
+    },
+    {
+        id: 'software&tools',
+        title: 'Software & Tools',
+        skillslist: [
+            {
+                id: '1',
+                skill: 'GitHub'
+            },
+            {
+                id: '2',
+                skill: 'Asana'
+            },
+            {
+                id: '3',
+                skill: 'Jira'
+            },
+            {
+                id: '4',
+                skill: 'VS Code Editor'
+            },
+            {
+                id: '5',
+                skill: 'Local by Flywheel'
+            },
+        ]
+    },
+]
+
+export const aboutme = [
+    {
+        id: 'aboutme',
+        title: 'HELLO',
+        description: 'I am a front-end web developer. I like to build websites using React.js and Taiwind.css. I am a team player and I have professional experience working as a team lead and managing small teams.',
+        resume: '',
+        img: volodymyrImg,
+        name: 'Volodymyr Ruzhak',
+        position: 'Front-end Web Developer',
+        linkedIn: 'https://www.linkedin.com/in/volodymyr-ruzhak-326585138/',
+        email: 'mailto:volodymyr.ruzhak@dcmail.ca'
     },
 ]
