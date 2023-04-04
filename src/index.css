@@ -25,6 +25,7 @@ label {
 
 :root {
     --_hue: 245;
+    --_mycolor: #29caba;
     --_size: 1.8rem;
     --_radius: 0.2em;
     --_tspeed_fast: 180ms;
@@ -40,7 +41,8 @@ label {
     
   /* Dark Mode */
     --bg--dark: var(--_hue) 15% 10%;
-    --txt--dark: var(--_hue) 30% 88%;
+    /*--txt--dark: var(--_hue) 30% 88%;*/
+    --txt--dark: var(--_mycolor);
     --accent--dark: var(--_hue) 50% 50%;
     --accent1--dark: 10 55% 50%;
     --muted--dark: var(--_hue) 20% 4%;
@@ -88,7 +90,8 @@ label {
 
 body {
     background-color: hsl(var(--bg));
-    color: hsl(var(--txt));
+    color: var(--txt);
+    /*color: hsl(var(--txt));*/
 }
 
 .btn {

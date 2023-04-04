@@ -9,7 +9,7 @@ import useLocalStorage from "../hooks/useLocalStorage";
 const NavBar = () => {
 
     const [open, setOpen] = useState();
-    const defaultTheme = window.matchMedia("(prefers-color-scheme : dark)");
+    const defaultTheme = window.matchMedia('(prefers-color-scheme : dark)');
     const [theme, setTheme] = useLocalStorage('dev-portfolio.scheme', defaultTheme ? 'dark' : 'light');
     const darkLogo = <img src={dark_logo} alt='vr dark theme logo' className='w-[3.5vw]' />;
     const lightLogo = <img src={light_logo} alt='vr light theme logo' className='w-[3.5vw]' />;
