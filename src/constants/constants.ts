@@ -103,7 +103,7 @@ export const projects = [
         img: madMovies
     },
     {
-        id: 'moviewebsite',
+        id: 'tamagotchigame',
         title: 'Tamagotchi Game',
         smallDiscription: 'Game using DOM-manipulation',
         buildWithTitle: 'Build with:',
@@ -121,7 +121,7 @@ export const projects = [
         img: signOut
     },
     {
-        id: 'equipmentsignout',
+        id: 'aghwordpress',
         title: 'Advanced Gaming Hardware',
         smallDiscription: 'Ecommerce Site',
         buildWithTitle: 'Build with:',
@@ -158,11 +158,11 @@ export const webDevSkills = [
             },
             {
                 id: '6',
-                skill: 'HTML 5 & CSS 3'
+                skill: 'CSS 3'
             },
             {
                 id: '7',
-                skill: 'Rapid API & REST API,'
+                skill: 'REST API,'
             },
             {
                 id: '8',
@@ -174,7 +174,7 @@ export const webDevSkills = [
             },
             {
                 id: '10',
-                skill: 'WordPress'
+                skill: 'HTML 5'
             },
         ]
     },

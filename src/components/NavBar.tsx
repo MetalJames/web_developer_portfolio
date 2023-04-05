@@ -11,11 +11,24 @@ const NavBar = () => {
     const [open, setOpen] = useState();
     const defaultTheme = window.matchMedia('(prefers-color-scheme : dark)');
     const [theme, setTheme] = useLocalStorage('dev-portfolio.scheme', defaultTheme ? 'dark' : 'light');
-    const darkLogo = <img src={dark_logo} alt='vr dark theme logo' className='w-[3.5vw]' />;
-    const lightLogo = <img src={light_logo} alt='vr light theme logo' className='w-[3.5vw]' />;
+    const darkLogo = <img src={dark_logo} alt='vr dark theme logo' className='w-[3rem]' />;
+    const lightLogo = <img src={light_logo} alt='vr light theme logo' className='w-[3rem]' />;
+
+    const [opacity, setOpacity] = useState(0); 
+
+    useEffect(() => { 
+
+        let timer = setTimeout(() => { 
+
+            setOpacity(1); 
+
+        }, 500); // Increase opacity over 1 second
+
+        return () => clearTimeout(timer); // Clean up timer when component unmounts 
+    }, []); // Run only once when component mounts
 
     return (
-        <nav className='w-full flex py-6 justify-between items-center navbar'>
+        <nav style={{opacity}} className='w-full flex py-6 justify-between items-center navbar'>
             {theme === 'dark' ? darkLogo : lightLogo}
             <ul className='list-none sm:flex hidden justify-end items-center flex-1 mr-10'>
                 {navLinks.map((link, index) => (

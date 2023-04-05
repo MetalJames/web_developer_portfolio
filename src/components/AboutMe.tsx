@@ -2,16 +2,16 @@ import { aboutme } from '../constants/constants';
 
 const AboutMe = () => {
     return (
-        <div>
-            <h1 className='text-3xl font-poppins font-bold text-center py-6'>About Me</h1>
+        <div className='sm:px-24 px-6 sm:py-4 py-2'>
+            <h1 className='text-3xl font-poppins font-bold text-center py-6'>ABOUT ME</h1>
             {aboutme.map(item=> (
-                <div className='flex w-full justify-center items-center'>
-                    <div className='w-[40%] flex flex-col items-center'>
+                <div key={item.id} className='flex sm:flex-row flex-col w-full justify-center items-center'>
+                    <div className='sm:w-[40%] w-full flex flex-col items-center'>
                         <h2 className='text-2xl py-6'>{item.title}</h2>
                         <p className='max-w-[70%] text-center'>{item.description}</p>
                         <button>{item.resume}</button>
                     </div>
-                    <div className='w-[40%] flex flex-col justify-center content-center items-center'>
+                    <div className='sm:w-[40%] w-full flex flex-col justify-center content-center items-center'>
                         <img src={item.img} alt={item.name} />
                         <div className='flex w-[350px] justify-between'>
                             <button><a href={item.linkedIn} />Email Me</button>

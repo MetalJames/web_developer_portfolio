@@ -26,6 +26,8 @@ label {
 :root {
     --_hue: 245;
     --_mycolor: #29caba;
+    --_border-color-light: #e5e7eb;
+    --_border-color-dark: #29caba;
     --_size: 1.8rem;
     --_radius: 0.2em;
     --_tspeed_fast: 180ms;
@@ -35,6 +37,7 @@ label {
   /* Light Mode */
     --bg--light: var(--_hue) 30% 94%;
     --txt--light: var(--_hue) 40% 5%;
+    --border--light: var(--_border-color-light);
     --accent--light: var(--_hue) 55% 50%;
     --accent1--light: 10 80% 60%;
     --muted--light: var(--_hue) 30% 99%;
@@ -43,6 +46,7 @@ label {
     --bg--dark: var(--_hue) 15% 10%;
     /*--txt--dark: var(--_hue) 30% 88%;*/
     --txt--dark: var(--_mycolor);
+    --border--dark: var(--_border-color-dark);
     --accent--dark: var(--_hue) 50% 50%;
     --accent1--dark: 10 55% 50%;
     --muted--dark: var(--_hue) 20% 4%;
@@ -52,6 +56,7 @@ label {
     :root {
         --bg: var(--bg--dark);
         --txt: var(--txt--dark);
+        --border: var(--border--dark);
         --accent: var(--accent--dark);
         --accent1: var(--accent1--dark);
         --muted: var(--muted--dark);
@@ -63,6 +68,7 @@ label {
     :root {
         --bg: var(--bg--light);
         --txt: var(--txt--light);
+        --border: var(--border--light);
         --accent: var(--accent--light);
         --accent1: var(--accent1--light);
         --muted: var(--muted--light);
@@ -73,6 +79,7 @@ label {
 [color-scheme="dark"] {
     --bg: var(--bg--dark);
     --txt: var(--txt--dark);
+    --border: var(--border--dark);
     --accent: var(--accent--dark);
     --accent1: var(--accent1--dark);
     --muted: var(--muted--dark);
@@ -82,6 +89,7 @@ label {
 [color-scheme="light"] {
     --bg: var(--bg--light);
     --txt: var(--txt--light);
+    --border: var(--border--light);
     --accent: var(--accent--light);
     --accent1: var(--accent1--light);
     --muted: var(--muted--light);
@@ -90,8 +98,29 @@ label {
 
 body {
     background-color: hsl(var(--bg));
-    color: var(--txt);
+    /* color: var(--txt); */
+    /* border-color: var(--txt); */
     /*color: hsl(var(--txt));*/
+}
+
+#header {
+    background-color: hsl(var(--bg));
+    opacity: .9;
+}
+
+.skillsborder {
+    border-color: var(--txt);
+}
+
+h1 {
+    color: var(--txt);
+}
+
+input, textarea {
+    border-color: var(--border);
+    border-radius: var(--_radius);
+    background-color: hsl(var(--muted));
+    outline: none;
 }
 
 .btn {
