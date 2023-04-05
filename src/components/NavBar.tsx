@@ -32,8 +32,13 @@ const NavBar = () => {
             {theme === 'dark' ? darkLogo : lightLogo}
             <ul className='list-none sm:flex hidden justify-end items-center flex-1 mr-10'>
                 {navLinks.map((link, index) => (
-                    <li key={link.id} className={`font-poppins ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'}`}>{link.title}</li>
+                    <li key={link.id} className={`font-poppins ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'}`}>
+                        <a href={`#${link.id}`}>{link.title}</a>
+                    </li>
                 ))}
+            </ul>
+            <ul className='list-none sm:hidden block w-full'>
+                <p className='w-full text-right pr-4'>MENU</p>
             </ul>
             <ThemeSwitcher theme={theme} setTheme={setTheme} />
         </nav>

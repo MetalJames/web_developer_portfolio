@@ -121,61 +121,61 @@ const ContactMe = () => {
     };
 
     return (
-        <div className='flex flex-col justify-between sm:px-24 px-6 sm:py-4 py-2'>
-        <h1 className='text-3xl font-poppins font-bold text-center py-6'>
-            GET IN TOUCH <br className='sm:hidden block' /> WITH ME
-        </h1>
-        <div className='h-full flex justify-center flex-col pb-8'>
-            <div className='sm:w-2/3 w-[100%] sm:m-auto m-0 sm:p-8 p-3 shadow-lg'>
-            {message && (
-                <div className={`my-4 text-white w-full p-4 ${message.class}`}>
-                {message.text}
+        <div id='contactme' className='flex flex-col justify-between pt-[6rem] sm:px-24 px-6 sm:pb-4 pb-2'>
+            <h1 className='text-3xl font-poppins font-bold text-center py-6'>
+                GET IN TOUCH <br className='sm:hidden block' /> WITH ME
+            </h1>
+            <div className='h-full flex justify-center flex-col pb-8'>
+                <div className='sm:w-2/3 w-[100%] sm:m-auto m-0 sm:p-8 p-3 shadow-lg'>
+                    {message && (
+                        <div className={`my-4 text-white w-full p-4 ${message.class}`}>
+                        {message.text}
+                        </div>
+                    )}
+                    <form onSubmit={submitForm} className='flex flex-col'>
+                        <div className='my-2 flex flex-col'>
+                        <label htmlFor='name'>Name</label>
+                        <input
+                            onChange={updateFormControl}
+                            className='border-2 p-2'
+                            type='text'
+                            id='name'
+                            value={formState?.name}
+                        />
+                        </div>
+                        <div className='my-2 flex flex-col'>
+                        <label htmlFor='email'>Email</label>
+                        <input
+                            onChange={updateFormControl}
+                            className='border-2 p-2'
+                            type='email'
+                            id='email'
+                            value={formState?.email}
+                        />
+                        </div>
+                        <div className='my-2 flex flex-col'>
+                        <label htmlFor='message'>Message</label>
+                        <textarea
+                            onChange={updateFormControl}
+                            className='border-2 p-2'
+                            id='message'
+                            value={formState?.message}
+                        ></textarea>
+                        </div>
+                        <ReCAPTCHA
+                        ref={recaptchaRef}
+                        sitekey={recaptchaKey}
+                        onChange={updateRecaptchaToken}
+                        />
+                        <button
+                        disabled={submitting}
+                        className='mt-4 my-2 bg-blue-700 text-white w-full p-2 hover:bg-blue-900 transition-colors duration-200'
+                        >
+                        {submitting ? 'Submitting...' : 'Submit'}
+                        </button>
+                    </form>
                 </div>
-            )}
-            <form onSubmit={submitForm} className='flex flex-col'>
-                <div className='my-2 flex flex-col'>
-                <label htmlFor='name'>Name</label>
-                <input
-                    onChange={updateFormControl}
-                    className='border-2 p-2'
-                    type='text'
-                    id='name'
-                    value={formState?.name}
-                />
-                </div>
-                <div className='my-2 flex flex-col'>
-                <label htmlFor='email'>Email</label>
-                <input
-                    onChange={updateFormControl}
-                    className='border-2 p-2'
-                    type='email'
-                    id='email'
-                    value={formState?.email}
-                />
-                </div>
-                <div className='my-2 flex flex-col'>
-                <label htmlFor='message'>Message</label>
-                <textarea
-                    onChange={updateFormControl}
-                    className='border-2 p-2'
-                    id='message'
-                    value={formState?.message}
-                ></textarea>
-                </div>
-                <ReCAPTCHA
-                ref={recaptchaRef}
-                sitekey={recaptchaKey}
-                onChange={updateRecaptchaToken}
-                />
-                <button
-                disabled={submitting}
-                className='mt-4 my-2 bg-blue-700 text-white w-full p-2 hover:bg-blue-900 transition-colors duration-200'
-                >
-                {submitting ? 'Submitting...' : 'Submit'}
-                </button>
-            </form>
             </div>
-        </div>
         </div>
     );
 };

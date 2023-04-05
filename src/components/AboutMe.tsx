@@ -2,7 +2,7 @@ import { aboutme } from '../constants/constants';
 
 const AboutMe = () => {
     return (
-        <div className='sm:px-24 px-6 sm:py-4 py-2'>
+        <div id='aboutme' className='pt-[6rem] sm:px-24 px-6 sm:pb-4 pb-2'>
             <h1 className='text-3xl font-poppins font-bold text-center py-6'>ABOUT ME</h1>
             {aboutme.map(item=> (
                 <div key={item.id} className='flex sm:flex-row flex-col w-full justify-center items-center'>

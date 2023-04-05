@@ -12,6 +12,10 @@
     padding: 0;
 }
 
+* {
+    scroll-behavior: smooth;
+}
+
 button {
     font: inherit;
     border: none;
@@ -113,6 +117,12 @@ body {
 }
 
 h1 {
+    background-color: hsl(var(--bg));
+    color: var(--txt);
+}
+
+h3, p {
+    background-color: hsl(var(--bg));
     color: var(--txt);
 }
 
