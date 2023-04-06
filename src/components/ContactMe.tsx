@@ -121,7 +121,7 @@ const ContactMe = () => {
     };
 
     return (
-        <div id='contactme' className='flex flex-col justify-between pt-[6rem] sm:px-24 px-6 sm:pb-4 pb-2'>
+        <div id='contactme' className='flex flex-col justify-between pt-[6rem] sm:px-24 px-0 sm:pb-4 pb-2'>
             <h1 className='text-3xl font-poppins font-bold text-center py-6'>
                 GET IN TOUCH <br className='sm:hidden block' /> WITH ME
             </h1>

@@ -112,6 +112,13 @@ body {
     opacity: .9;
 }
 
+@media only screen and (max-width: 768px){
+    #header {
+        background-color: hsl(var(--bg));
+        opacity: 1;
+    }
+}
+
 .skillsborder {
     border-color: var(--txt);
 }
@@ -123,7 +130,7 @@ h1 {
 
 h3, p {
     background-color: hsl(var(--bg));
-    color: var(--txt);
+    /* color: var(--txt); */
 }
 
 input, textarea {

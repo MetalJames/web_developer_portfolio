@@ -9,7 +9,7 @@ function App() {
           <NavBar />
         </div>
       </div>
-      <div>
+      <div className='xl:max-w-[1280px] w-full sm:px-16 px-6'>
         <Projects />
         <Skills />
         <AboutMe />

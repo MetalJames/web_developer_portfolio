@@ -4,7 +4,7 @@ const Skills = () => {
     return (
         <div id='skills' className='sm:w-[80%] w-full m-[auto] pt-[6rem]'>
             <h1 className='text-3xl font-poppins font-bold text-center py-6'>SKILLS</h1>
-            <div className='grid sm:grid-cols-2 grid-cols-1 gap-y-[4rem] w-[full] p-6 justify-items-center'>
+            <div className='grid sm:grid-cols-2 grid-cols-1 gap-y-[4rem] w-[full] sm:p-6 p-0 justify-items-center'>
                 {webDevSkills.map(webDevSkill=> (
                     <div key={webDevSkill.id} className='skillsborder border-x-[3px] rounded-[25px] p-10 sm:max-w-[30vw] w-full'>
                         <h3 key={webDevSkill.id} className='text-center text-3xl pb-4'>{webDevSkill.title}</h3>
