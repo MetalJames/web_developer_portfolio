@@ -121,12 +121,12 @@ const ContactMe = () => {
     };
 
     return (
-        <div id='contactme' className='flex flex-col justify-between pt-[6rem] sm:px-24 px-0 sm:pb-4 pb-2'>
+        <div id='contactme' className='flex flex-col justify-between pt-[6rem] sm:px-12 md:px-24 px-0 sm:pb-4 pb-2'>
             <h1 className='text-3xl font-poppins font-bold text-center py-6'>
                 GET IN TOUCH <br className='sm:hidden block' /> WITH ME
             </h1>
             <div className='h-full flex justify-center flex-col pb-8'>
-                <div className='sm:w-2/3 w-[100%] sm:m-auto m-0 sm:p-8 p-3 shadow-lg'>
+                <div className='md:w-2/3 w-[100%] sm:m-auto m-0 sm:p-8 p-3 shadow-lg'>
                     {message && (
                         <div className={`my-4 text-white w-full p-4 ${message.class}`}>
                         {message.text}

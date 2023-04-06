@@ -16,21 +16,8 @@ const NavBar = () => {
     const darkLogo = <img src={dark_logo} alt='vr dark theme logo' className='w-[3rem]' onClick={() => top()}/>;
     const lightLogo = <img src={light_logo} alt='vr light theme logo' className='w-[3rem]' />;
 
-    const [opacity, setOpacity] = useState(0); 
-
-    useEffect(() => { 
-
-        let timer = setTimeout(() => { 
-
-            setOpacity(1); 
-
-        }, 500); // Increase opacity over 1 second
-
-        return () => clearTimeout(timer); // Clean up timer when component unmounts 
-    }, []); // Run only once when component mounts
-
     return (
-        <nav style={{opacity}} className='w-full flex py-6 justify-between items-center navbar'>
+        <nav className='w-full flex py-6 justify-between items-center navbar'>
             {theme === 'dark' ? darkLogo : lightLogo}
             <ul className='list-none sm:flex hidden justify-end items-center flex-1 mr-10'>
                 {navLinks.map((link, index) => (
@@ -48,7 +35,7 @@ const NavBar = () => {
                             <AiOutlineCloseCircle size='2.5rem' color='black' />
                         </h4>
                     </div>
-                    <div className='flex flex-wrap w-full h-full'>
+                    <div className='flex flex-wrap w-full h-[80%]'>
                         {navLinks.map(link => (
                             <div key={link.id} className={`
                             w-[50%] h-[50%] flex justify-center items-center text-black
