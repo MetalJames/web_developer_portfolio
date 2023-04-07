@@ -35,7 +35,7 @@ const NavBar = () => {
                             <AiOutlineCloseCircle size='2.5rem' color='black' />
                         </h4>
                     </div>
-                    <div className='flex flex-wrap w-full h-[80%]'>
+                    <div className='flex flex-wrap w-full h-[60%]'>
                         {navLinks.map(link => (
                             <div key={link.id} className={`
                             w-[50%] h-[50%] flex justify-center items-center text-black
@@ -54,6 +54,10 @@ const NavBar = () => {
                     <div className='flex justify-between items-center w-full p-6'>
                         <a href='https://github.com/MetalJames' target='_blank'><AiFillGithub size='3rem' color='black'/></a>
                         <a href='https://www.linkedin.com/in/volodymyr-ruzhak-326585138/' target='_blank'><AiFillLinkedin size='3rem' color='black'/></a>
+                    </div>
+                    <div className='flex flex-col items-center justify-center text-black w-full'>
+                        <h4 className='font-poppins font-light text-[16px] leading-[30px]'>All Rights Reserved</h4>
+                        <h4 className='font-poppins font-light text-[16px] leading-[30px]'>Copyright © 2023 Volodymyr Ruzhak</h4>
                     </div>
                 </div>
             </div>

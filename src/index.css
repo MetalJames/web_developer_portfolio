@@ -18,7 +18,7 @@
 
 button {
     font: inherit;
-    border: none;
+    /*border: none;*/
     cursor: pointer;
 }
 
@@ -102,6 +102,7 @@ label {
 
 body {
     background-color: hsl(var(--bg));
+    font-family: 'Poppins', sans-serif;
     /* color: var(--txt); */
     /* border-color: var(--txt); */
     /*color: hsl(var(--txt));*/
@@ -121,6 +122,11 @@ body {
 
 .skillsborder {
     border-color: var(--txt);
+}
+
+.downloadresume {
+    border-color: var(--txt);
+    color: var(--txt);
 }
 
 h1 {

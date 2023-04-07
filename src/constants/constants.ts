@@ -1,5 +1,8 @@
 import { aghReactjs, agh, chevysonic, fitness, GPT3, madMovies, realEstate, signOut, tamagotchi, techCityOshawa, theSweetGroceries, travel } from '../aseets/project_covers';
 import volodymyrImg from '../aseets/volodymyr.jpeg';
+import email from '../aseets/email.png';
+import linkedIn from '../aseets/linkedIn.png';
+import resumePDF from '../aseets/Volodymyr_Ruzhak_CV.pdf';
 
 export const navLinks = [
     {
@@ -259,11 +262,13 @@ export const aboutme = [
         id: 'aboutme',
         title: 'HELLO',
         description: 'I am a front-end web developer. I like to build websites using React.js and Taiwind.css. I am a team player and I have professional experience working as a team lead and managing small teams.',
-        resume: '',
+        resume: resumePDF,
         img: volodymyrImg,
         name: 'Volodymyr Ruzhak',
         position: 'Front-end Web Developer',
         linkedIn: 'https://www.linkedin.com/in/volodymyr-ruzhak-326585138/',
-        email: 'mailto:volodymyr.ruzhak@dcmail.ca'
+        email: 'mailto:volodymyr.ruzhak@dcmail.ca',
+        linkedInImg: linkedIn,
+        emailImg: email,
     },
 ]
