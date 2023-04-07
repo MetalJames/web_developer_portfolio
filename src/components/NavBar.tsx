@@ -9,7 +9,8 @@ import useLocalStorage from "../hooks/useLocalStorage";
 
 const NavBar = () => {
 
-    const [isCurrent, setIsCurrent] = useState('projects');
+    // const [isCurrent, setIsCurrent] = useState('projects');
+    // ${isCurrent === link.id ? 'text-[#29caba]' : 'text-current'}
     const [open, setOpen] = useState(false);
     const top = () => window.scrollTo(0, 0);
     const defaultTheme = window.matchMedia('(prefers-color-scheme : dark)');
@@ -24,10 +25,11 @@ const NavBar = () => {
                 {navLinks.map((link, index) => (
                     <li key={link.id} className={`font-poppins 
                         ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'}
-                        ${isCurrent === link.id ? 'text-[#29caba]' : 'text-current'}
+                        
                         `}
                     >
-                        <a href={`#${link.id}`} onClick={() => setIsCurrent(link.id)}>
+                        <a href={`#${link.id}`}>
+                        {/* <a href={`#${link.id}`} onClick={() => setIsCurrent(link.id)}> */}
                             <p className='navbarUnderline'>{link.title}</p>
                         </a>
                     </li>
