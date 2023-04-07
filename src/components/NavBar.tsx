@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { navLinks } from "../constants/constants";
 import dark_logo from '../aseets/dark_logo.svg'
 import light_logo from '../aseets/light_logo.svg'
@@ -9,6 +9,7 @@ import useLocalStorage from "../hooks/useLocalStorage";
 
 const NavBar = () => {
 
+    const [isCurrent, setIsCurrent] = useState('projects');
     const [open, setOpen] = useState(false);
     const top = () => window.scrollTo(0, 0);
     const defaultTheme = window.matchMedia('(prefers-color-scheme : dark)');
@@ -21,8 +22,14 @@ const NavBar = () => {
             {theme === 'dark' ? darkLogo : lightLogo}
             <ul className='list-none sm:flex hidden justify-end items-center flex-1 mr-10'>
                 {navLinks.map((link, index) => (
-                    <li key={link.id} className={`font-poppins ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'}`}>
-                        <a href={`#${link.id}`}>{link.title}</a>
+                    <li key={link.id} className={`font-poppins 
+                        ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'}
+                        ${isCurrent === link.id ? 'text-[#29caba]' : 'text-current'}
+                        `}
+                    >
+                        <a href={`#${link.id}`} onClick={() => setIsCurrent(link.id)}>
+                            <p className='navbarUnderline'>{link.title}</p>
+                        </a>
                     </li>
                 ))}
             </ul>

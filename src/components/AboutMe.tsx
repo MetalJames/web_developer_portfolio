@@ -2,18 +2,18 @@ import { aboutme } from '../constants/constants';
 
 const AboutMe = () => {
     return (
-        <div id='aboutme' className='pt-[6rem] sm:px-24 px-3 sm:pb-4 pb-2'>
+        <div id='aboutme' className='pt-[6rem] md:px-24 sm:px-0 px-3 sm:pb-4 pb-2'>
             <h1 className='text-3xl font-poppins font-bold text-center py-6'>ABOUT ME</h1>
             {aboutme.map(item=> (
-                <div key={item.id} className='flex sm:flex-row flex-col w-full justify-center items-center'>
-                    <div className='sm:w-[40%] w-full flex flex-col items-center'>
+                <div key={item.id} className='flex sm:flex-row flex-col w-full justify-center items-center p-6'>
+                    <div className='sm:w-[50%] md:w-[40%] w-full flex flex-col items-center'>
                         <h2 className='text-2xl pb-6'>{item.title}</h2>
-                        <p className='max-w-[70%] text-center'>{item.description}</p>
-                        <a href={item.resume} className='pt-6'>
+                        <p className='md:max-w-[70%] max-w-[90%] text-center'>{item.description}</p>
+                        <a href={item.resume} className='sm:pt-12 pt-6 sm:pb-6 pb-12'>
                             <button className='bg-transparent hover:bg-[#29caba] font-semibold hover:text-white py-2 px-4 border downloadresume hover:border-transparent rounded transition-all'>Download Resume</button>
                         </a>
                     </div>
-                    <div className='sm:w-[40%] w-full flex flex-col justify-center content-center items-center'>
+                    <div className='sm:w-[50%] md:w-[40%] w-full flex flex-col justify-center content-center items-center'>
                         <img src={item.img} alt={item.name}  className='w-full'/>
                         <div className='flex justify-between items-center w-full pt-4'>
                             <a href={item.email} className='w-[2.5rem] h-[2.5rem]'><img src={item.emailImg} alt="" /></a>

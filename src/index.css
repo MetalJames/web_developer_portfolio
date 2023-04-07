@@ -32,6 +32,8 @@ label {
     --_mycolor: #29caba;
     --_border-color-light: #e5e7eb;
     --_border-color-dark: #29caba;
+    --_underline-color-light: #000;
+    --_underline-color-dark: #29caba;
     --_size: 1.8rem;
     --_radius: 0.2em;
     --_tspeed_fast: 180ms;
@@ -42,6 +44,7 @@ label {
     --bg--light: var(--_hue) 30% 94%;
     --txt--light: var(--_hue) 40% 5%;
     --border--light: var(--_border-color-light);
+    --underline--light: var(--_underline-color-light);
     --accent--light: var(--_hue) 55% 50%;
     --accent1--light: 10 80% 60%;
     --muted--light: var(--_hue) 30% 99%;
@@ -51,6 +54,7 @@ label {
     /*--txt--dark: var(--_hue) 30% 88%;*/
     --txt--dark: var(--_mycolor);
     --border--dark: var(--_border-color-dark);
+    --underline--dark: var(--_underline-color-dark);
     --accent--dark: var(--_hue) 50% 50%;
     --accent1--dark: 10 55% 50%;
     --muted--dark: var(--_hue) 20% 4%;
@@ -61,6 +65,7 @@ label {
         --bg: var(--bg--dark);
         --txt: var(--txt--dark);
         --border: var(--border--dark);
+        --underline: var(--underline--dark);
         --accent: var(--accent--dark);
         --accent1: var(--accent1--dark);
         --muted: var(--muted--dark);
@@ -73,6 +78,7 @@ label {
         --bg: var(--bg--light);
         --txt: var(--txt--light);
         --border: var(--border--light);
+        --underline: var(--underline--light);
         --accent: var(--accent--light);
         --accent1: var(--accent1--light);
         --muted: var(--muted--light);
@@ -84,6 +90,7 @@ label {
     --bg: var(--bg--dark);
     --txt: var(--txt--dark);
     --border: var(--border--dark);
+    --underline: var(--underline--dark);
     --accent: var(--accent--dark);
     --accent1: var(--accent1--dark);
     --muted: var(--muted--dark);
@@ -94,6 +101,7 @@ label {
     --bg: var(--bg--light);
     --txt: var(--txt--light);
     --border: var(--border--light);
+    --underline: var(--underline--light);
     --accent: var(--accent--light);
     --accent1: var(--accent1--light);
     --muted: var(--muted--light);
@@ -184,4 +192,27 @@ input, textarea {
 .btn:focus-visible {
     box-shadow: 0 0 0 hsl(var(--accent) / 0.3), 0 0 0 0.2em hsl(var(--bg)),
         0 0 0 0.4em hsl(var(--accent) / 0.7);
+}
+
+.navbarUnderline {
+    display: inline-block;
+    position: relative;
+}
+
+.navbarUnderline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--underline);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.navbarUnderline:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
