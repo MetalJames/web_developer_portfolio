@@ -15,8 +15,8 @@ const NavBar = () => {
     const top = () => window.scrollTo(0, 0);
     const defaultTheme = window.matchMedia('(prefers-color-scheme : dark)');
     const [theme, setTheme] = useLocalStorage('dev-portfolio.scheme', defaultTheme ? 'dark' : 'light');
-    const darkLogo = <img src={dark_logo} alt='vr dark theme logo' className='w-[3rem]' onClick={() => top()}/>;
-    const lightLogo = <img src={light_logo} alt='vr light theme logo' className='w-[3rem]' />;
+    const darkLogo = <img src={dark_logo} alt='vr dark theme logo' className='w-[3rem] cursor-pointer' onClick={() => top()}/>;
+    const lightLogo = <img src={light_logo} alt='vr light theme logo' className='w-[3rem] cursor-pointer' onClick={() => top()}/>;
 
     return (
         <nav className='w-full flex py-6 justify-between items-center navbar'>
