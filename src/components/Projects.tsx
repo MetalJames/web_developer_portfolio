@@ -2,18 +2,18 @@ import { projects } from '../constants/constants';
 
 const Projects = () => {
 
-    const first = ['aghReact', 'travelapp', 'techoshawa', 'tamagotchigame'];
-    const middle = ['chevysonic2018', 'realestateapp', 'grocerystore', 'equipmentsignout'];
-    const last = ['fitnessapp', 'gpt3app', 'moviewebsite', 'aghwordpress'];
+    const first = ['pcmaxrepair', 'aghReact', 'travelapp', 'techoshawa', 'tamagotchigame'];
+    const middle = ['chevysonic2018', 'myyoutube', 'realestateapp', 'grocerystore', 'equipmentsignout'];
+    const last = ['todofirebase', 'fitnessapp', 'gpt3app', 'moviewebsite', 'aghwordpress'];
 
-    const mdFirst = ['aghReact', 'fitnessapp', 'realestateapp', 'techoshawa', 'moviewebsite', 'equipmentsignout' ];
-    const mdLast = ['chevysonic2018', 'travelapp', 'gpt3app', 'grocerystore', 'tamagotchigame', 'aghwordpress' ];
+    const mdFirst = ['pcmaxrepair', 'todofirebase', 'myyoutube', 'travelapp', 'gpt3app', 'grocerystore', 'tamagotchigame', 'aghwordpress' ];
+    const mdLast = ['chevysonic2018', 'aghReact', 'fitnessapp', 'realestateapp', 'techoshawa', 'moviewebsite', 'equipmentsignout' ];
 
     return (
         <div id='projects' className='pt-[6rem]'>
             <h1 className='text-3xl font-bold text-center py-6'>PROJECTS</h1>
             <div className='grid sm:grid-cols-2 md:grid-cols-3 grid-cols-1 gap-4'>
-                {projects.map(project => (
+                {projects.map((project, index) => (
                     <div key={project.id} >   
                     <a href={project.link} target='_blank' className={`
                         relative flex flex-col sm:pt-0 m-2 justify-center items-center

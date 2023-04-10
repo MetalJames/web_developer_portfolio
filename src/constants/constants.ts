@@ -1,4 +1,4 @@
-import { aghReactjs, agh, chevysonic, fitness, GPT3, madMovies, realEstate, signOut, tamagotchi, techCityOshawa, theSweetGroceries, travel } from '../aseets/project_covers';
+import { aghReactjs, agh, chevysonic, fitness, GPT3, madMovies, realEstate, signOut, tamagotchi, techCityOshawa, theSweetGroceries, travel, pcmaxrepair, youtubeclone, todofirebase } from '../aseets/project_covers';
 import volodymyrImg from '../aseets/volodymyr.jpeg';
 import email from '../aseets/email.png';
 import linkedIn from '../aseets/linkedIn.png';
@@ -25,38 +25,65 @@ export const navLinks = [
 
 export const projects = [
     {
-        id: 'aghReact',
-        title: 'AGH React.js',
-        smallDiscription: 'E-commerce tech shop',
+        id: 'pcmaxrepair',
+        title: 'PC MAX REPAIR',
+        smallDiscription: 'Repair Tech Shop',
         buildWithTitle: 'Build with:',
-        buildWith: 'React.js / Commerce.jc / Stripe / Rapid API',
-        link: 'https://agh-react-js.netlify.app/',
-        img: aghReactjs
+        buildWith: 'React JS, Tailwind CSS, TypeScript, FormSpark',
+        link: 'https://pcmaxrepair.vercel.app/',
+        img: pcmaxrepair
     },
     {
         id: 'chevysonic2018',
-        title: 'Chevy Sonic 2018 LT React.js',
+        title: 'Chevy Sonic 2018 LT React JS',
         smallDiscription: 'Car Specifications and Details',
         buildWithTitle: 'Build with:',
-        buildWith: 'React.js / Material-UI',
+        buildWith: 'React JS / Material UI 5',
         link: 'https://chevysonic.vercel.app/',
         img: chevysonic
     },
     {
+        id: 'todofirebase',
+        title: 'Todo App',
+        smallDiscription: 'Todo app with Firebase',
+        buildWithTitle: 'Build with:',
+        buildWith: 'React JS, Tailwind CSS, TypeScript, Firebase',
+        link: 'https://react-todo-firebase-tailwind-css.vercel.app/',
+        img: todofirebase
+    },
+    {
+        id: 'aghReact',
+        title: 'AGH React JS',
+        smallDiscription: 'E-commerce tech shop',
+        buildWithTitle: 'Build with:',
+        buildWith: 'React JS / Commerce JS / Stripe / Rapid API',
+        link: 'https://agh-react-js.netlify.app/',
+        img: aghReactjs
+    },
+    {
+        id: 'myyoutube',
+        title: 'Youtube Clone',
+        smallDiscription: 'Basically Youtube Clone',
+        buildWithTitle: 'Build with:',
+        buildWith: 'React JS, Material UI 5, Rapid API',
+        link: 'https://my-youtube-video.netlify.app/',
+        img: youtubeclone
+    },
+    {
         id: 'fitnessapp',
-        title: 'My Fitness React.js',
+        title: 'My Fitness React JS',
         smallDiscription: 'All about fitness',
         buildWithTitle: 'Build with:',
-        buildWith: 'React.js / Material-UI / Rapid API',
+        buildWith: 'React JS / Material UI 5 / Rapid API',
         link: 'https://fitness-exercises-app-opal.vercel.app/',
         img: fitness
     },
     {
         id: 'travelapp',
-        title: 'Travel the World React.js',
+        title: 'Travel the World React JS',
         smallDiscription: 'Travel guid app',
         buildWithTitle: 'Build with:',
-        buildWith: 'React.js / Material-UI / JSON',
+        buildWith: 'React JS / Material UI 5 / JSON',
         link: 'https://travel-the-world-react-js.netlify.app/',
         img: travel
     },
@@ -65,25 +92,25 @@ export const projects = [
         title: 'Real Estate Next.js',
         smallDiscription: 'Buy or Rent Property',
         buildWithTitle: 'Build with:',
-        buildWith: 'Next.js / Chakra-UI / Rapid API',
+        buildWith: 'Next JS / Chakra UI / Rapid API',
         link: 'https://real-estate-app-next-js.vercel.app/',
         img: realEstate
     },
     {
         id: 'gpt3app',
-        title: 'GPT-3 OpenAI React.js',
+        title: 'GPT-3 OpenAI React JS',
         smallDiscription: 'Demo of AI Builder',
         buildWithTitle: 'Build with:',
-        buildWith: 'React.js/Custom CSS',
+        buildWith: 'React JS / Custom CSS',
         link: 'https://modern-ui-ux-gpt3-neon.vercel.app/',
         img: GPT3
     },
     {
         id: 'techoshawa',
-        title: 'Teaching City Oshawa Vue.js',
+        title: 'Teaching City Oshawa Vue JS',
         smallDiscription: 'Collaborative Project',
         buildWithTitle: 'Build with:',
-        buildWith: 'Vue.js / JavaScript / JSON',
+        buildWith: 'Vue JS / JavaScript / JSON',
         link: 'https://dcdowntownoshawa.netlify.app/',
         img: techCityOshawa
     },
@@ -116,10 +143,10 @@ export const projects = [
     },
     {
         id: 'equipmentsignout',
-        title: 'Equipment Sign Out Vue.js',
+        title: 'Equipment Sign Out Vue JS',
         smallDiscription: 'Equipment Sign Out Site',
         buildWithTitle: 'Build with:',
-        buildWith: 'PHP / JavaScript / MySQL / Vue.js',
+        buildWith: 'PHP / JavaScript / MySQL / Vue JS',
         link: 'http://signout.volodymyrdc.ca/',
         img: signOut
     },
@@ -141,7 +168,7 @@ export const webDevSkills = [
         skillslist: [
             {
                 id: '1',
-                skill: 'React.js'
+                skill: 'React JS'
             },
             {
                 id: '2',
@@ -149,7 +176,7 @@ export const webDevSkills = [
             },
             {
                 id: '3',
-                skill: 'Material-UI'
+                skill: 'Material UI 5'
             },
             {
                 id: '4',
@@ -169,11 +196,11 @@ export const webDevSkills = [
             },
             {
                 id: '8',
-                skill: 'Next.js'
+                skill: 'Next JS'
             },
             {
                 id: '9',
-                skill: 'VUE.js'
+                skill: 'VUE JS'
             },
             {
                 id: '10',

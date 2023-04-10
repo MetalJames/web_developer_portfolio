@@ -216,3 +216,9 @@ input, textarea {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
+@media only screen and (max-width: 1200px){
+    .navbarUnderline::after {
+        display: none;
+    }
+}

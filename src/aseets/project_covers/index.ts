@@ -10,6 +10,9 @@ import tamagotchi from './tamagotchi.png';
 import techCityOshawa from './tech_city_oshawa.png';
 import theSweetGroceries from './theSweetGroceries.png';
 import travel from './travel.png';
+import pcmaxrepair from './pcmaxrepair.png';
+import youtubeclone from './youtubeclone.png';
+import todofirebase from './todofirebase.png';
 
 export {
     aghReactjs,
@@ -23,5 +26,8 @@ export {
     tamagotchi,
     techCityOshawa,
     theSweetGroceries,
-    travel
+    travel,
+    pcmaxrepair,
+    youtubeclone,
+    todofirebase
 }
