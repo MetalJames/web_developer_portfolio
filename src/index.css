@@ -147,6 +147,16 @@ h3, p {
     /* color: var(--txt); */
 }
 
+.bgSMtoLG {
+    background-color: hsl(var(--bg));
+}
+
+@media only screen and (min-width: 1200px){
+    .bgSMtoLG {
+        background-color: transparent;
+    }
+}
+
 input, textarea {
     border-color: var(--border);
     border-radius: var(--_radius);

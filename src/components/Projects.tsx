@@ -29,8 +29,8 @@ const Projects = () => {
                             <img src={project.img} alt={project.title} className='
                                 md:group-hover/item:opacity-10 transition-opacity duration-500 cursor-pointer'
                             />
-                        <div className='absolute sm:block hidden sm:bottom-0 lg:bottom-auto lg:opacity-0 lg:group-hover/item:opacity-100 transition-opacity duration-500 text-center cursor-pointer sm:bg-black lg:bg-transparent sm:opacity-80 w-full'>
-                            <h4 className=' font-semibold lg:text-[20px] md:text-[1rem] text-[.9rem] leading-[32px]'>{project.smallDiscription}</h4>
+                        <div className='absolute sm:block hidden sm:bottom-0 lg:bottom-auto lg:opacity-0 lg:group-hover/item:opacity-100 transition-opacity duration-500 text-center cursor-pointer bgSMtoLG lg:bg-transparent sm:opacity-80 w-full'>
+                            <h4 className='font-semibold lg:text-[20px] md:text-[1rem] text-[.9rem] leading-[32px]'>{project.smallDiscription}</h4>
                             <h6 className='font-poppins font-light lg:text-[16px] md:text-[.7rem] text-[.7rem] leading-[24px]'>{project.buildWithTitle}</h6>
                             <h4 className='font-poppins font-normal lg:text-[18px] md:text-[.8rem] text-[.7rem] leading-[32px]'>{project.buildWith}</h4>
                         </div>
