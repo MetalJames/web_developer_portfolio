@@ -1,4 +1,4 @@
-import { aghReactjs, agh, chevysonic, fitness, GPT3, madMovies, realEstate, signOut, tamagotchi, techCityOshawa, theSweetGroceries, travel, pcmaxrepair, youtubeclone, todofirebase } from '../aseets/project_covers';
+import { aghReactjs, chevysonic, fitness, GPT3, realEstate, tamagotchi, techCityOshawa, hoobank, travel, pcmaxrepair, youtubeclone, todofirebase } from '../aseets/project_covers';
 import volodymyrImg from '../aseets/volodymyr.jpeg';
 import email from '../aseets/email.png';
 import linkedIn from '../aseets/linkedIn.png';
@@ -115,22 +115,13 @@ export const projects = [
         img: techCityOshawa
     },
     {
-        id: 'grocerystore',
-        title: 'the Sweet Groceries',
-        smallDiscription: 'Grocery Web Site Store',
+        id: 'hoobank',
+        title: 'HooBank',
+        smallDiscription: 'HooBank',
         buildWithTitle: 'Build with:',
-        buildWith: 'PHP / MySQL / JavaScript',
-        link: 'http://tsg.volodymyrdc.ca/#/splash/',
-        img: theSweetGroceries
-    },
-    {
-        id: 'moviewebsite',
-        title: 'Mad Movies / Movie site',
-        smallDiscription: 'Movie Web Site',
-        buildWithTitle: 'Build with:',
-        buildWith: 'PHP / MySQL / JavaScript',
-        link: 'http://madmovies.volodymyrdc.ca/#/splash/',
-        img: madMovies
+        buildWith: 'React JS / Tailwind CSS',
+        link: 'https://hoobank-modern-bankapp.netlify.app/',
+        img: hoobank
     },
     {
         id: 'tamagotchigame',
@@ -138,26 +129,8 @@ export const projects = [
         smallDiscription: 'Game using DOM-manipulation',
         buildWithTitle: 'Build with:',
         buildWith: 'JavaScript / DOM / GSAP 3 / SVG',
-        link: 'http://tamagotchi.volodymyrdc.ca/',
+        link: 'https://tamagotchi-pet-metaljames.vercel.app/',
         img: tamagotchi
-    },
-    {
-        id: 'equipmentsignout',
-        title: 'Equipment Sign Out Vue JS',
-        smallDiscription: 'Equipment Sign Out Site',
-        buildWithTitle: 'Build with:',
-        buildWith: 'PHP / JavaScript / MySQL / Vue JS',
-        link: 'http://signout.volodymyrdc.ca/',
-        img: signOut
-    },
-    {
-        id: 'aghwordpress',
-        title: 'Advanced Gaming Hardware',
-        smallDiscription: 'Ecommerce Site',
-        buildWithTitle: 'Build with:',
-        buildWith: 'Custom WordPress theme, WooCommerce',
-        link: 'http://agh.volodymyrdc.ca/',
-        img: agh
     },
 ]
 

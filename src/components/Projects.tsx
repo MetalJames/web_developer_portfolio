@@ -2,12 +2,12 @@ import { projects } from '../constants/constants';
 
 const Projects = () => {
 
-    const first = ['pcmaxrepair', 'aghReact', 'travelapp', 'techoshawa', 'tamagotchigame'];
-    const middle = ['chevysonic2018', 'myyoutube', 'realestateapp', 'grocerystore', 'equipmentsignout'];
-    const last = ['todofirebase', 'fitnessapp', 'gpt3app', 'moviewebsite', 'aghwordpress'];
+    const first = ['pcmaxrepair', 'aghReact', 'travelapp', 'techoshawa'];
+    const middle = ['chevysonic2018', 'myyoutube', 'realestateapp', 'hoobank'];
+    const last = ['todofirebase', 'fitnessapp', 'gpt3app', 'tamagotchigame'];
 
-    const mdFirst = ['pcmaxrepair', 'todofirebase', 'myyoutube', 'travelapp', 'gpt3app', 'grocerystore', 'tamagotchigame', 'aghwordpress' ];
-    const mdLast = ['chevysonic2018', 'aghReact', 'fitnessapp', 'realestateapp', 'techoshawa', 'moviewebsite', 'equipmentsignout' ];
+    const mdFirst = ['pcmaxrepair', 'todofirebase', 'myyoutube', 'travelapp', 'gpt3app', 'hoobank'];
+    const mdLast = ['chevysonic2018', 'aghReact', 'fitnessapp', 'realestateapp', 'techoshawa', 'tamagotchigame'];
 
     return (
         <div id='projects' className='pt-[6rem]'>
