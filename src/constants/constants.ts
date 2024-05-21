@@ -30,7 +30,7 @@ export const projects = [
         smallDiscription: 'Repair Tech Shop',
         buildWithTitle: 'Build with:',
         buildWith: 'React JS, Tailwind CSS, TypeScript, FormSpark',
-        link: 'https://pcmaxrepair.vercel.app/',
+        link: 'https://pcmaxrepair.ca/',
         img: pcmaxrepair
     },
     {
