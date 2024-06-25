@@ -1,4 +1,4 @@
-import { aghReactjs, chevysonic, fitness, GPT3, realEstate, tamagotchi, techCityOshawa, hoobank, travel, pcmaxrepair, youtubeclone, todofirebase } from '../aseets/project_covers';
+import { aghReactjs, chevysonic, fitness, GPT3, realEstate, tamagotchi, techCityOshawa, hoobank, travel, pcmaxrepair, youtubeclone, todofirebase, triviaquiz, employeeboard, cfbank } from '../aseets/project_covers';
 import volodymyrImg from '../aseets/volodymyr.jpeg';
 import email from '../aseets/email.png';
 import linkedIn from '../aseets/linkedIn.png';
@@ -29,9 +29,36 @@ export const projects = [
         title: 'PC MAX REPAIR',
         smallDiscription: 'Repair Tech Shop',
         buildWithTitle: 'Build with:',
-        buildWith: 'React JS, Tailwind CSS, TypeScript, FormSpark',
+        buildWith: 'React JS, TypeScript, Tailwind CSS, FormSpark',
         link: 'https://pcmaxrepair.ca/',
         img: pcmaxrepair
+    },
+    {
+        id: 'triviaquizgame',
+        title: 'Trivia Quiz Game',
+        smallDiscription: 'Test Your Knowledge',
+        buildWithTitle: 'Build with:',
+        buildWith: 'React JS, TypeScript, Tailwind CSS, MongoDB, Firebase, Node JS',
+        link: 'https://trivia-quiz-game.vercel.app/',
+        img: triviaquiz
+    },
+    {
+        id: 'cfbank',
+        title: 'Capital Finance Bank',
+        smallDiscription: 'Your secure financial partner',
+        buildWithTitle: 'Build with:',
+        buildWith: 'React JS, TypeScript, Tailwind CSS, Mongo DB, Node JS',
+        link: 'https://capital-finance-bank.vercel.app/',
+        img: cfbank
+    },
+    {
+        id: 'employeeboard',
+        title: 'Employee Board',
+        smallDiscription: 'Edit info/add tags to employee',
+        buildWithTitle: 'Build with:',
+        buildWith: 'React JS, TypeScript, Tailwind CSS, JSON',
+        link: 'https://employee-board.vercel.app/',
+        img: employeeboard
     },
     {
         id: 'chevysonic2018',

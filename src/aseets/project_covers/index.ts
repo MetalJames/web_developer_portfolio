@@ -10,6 +10,9 @@ import travel from './travel.png';
 import pcmaxrepair from './pcmaxrepair.png';
 import youtubeclone from './youtubeclone.png';
 import todofirebase from './todofirebase.png';
+import triviaquiz from './trivia_game.png';
+import employeeboard from './employee_board.png';
+import cfbank from './cfbank.png';
 
 export {
     aghReactjs,
@@ -23,5 +26,8 @@ export {
     travel,
     pcmaxrepair,
     youtubeclone,
-    todofirebase
+    todofirebase,
+    triviaquiz,
+    employeeboard,
+    cfbank
 }
