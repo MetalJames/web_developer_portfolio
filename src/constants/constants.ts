@@ -172,11 +172,11 @@ export const webDevSkills = [
             },
             {
                 id: '2',
-                skill: 'Tailwind.CSS'
+                skill: 'Typescript'
             },
             {
                 id: '3',
-                skill: 'Material UI 5'
+                skill: 'Tailwind.CSS'
             },
             {
                 id: '4',
@@ -184,27 +184,27 @@ export const webDevSkills = [
             },
             {
                 id: '5',
-                skill: 'Typescript'
+                skill: 'Material UI 5'
             },
             {
                 id: '6',
-                skill: 'CSS 3'
+                skill: 'REST API'
             },
             {
                 id: '7',
-                skill: 'REST API,'
+                skill: 'HTML 5'
             },
             {
                 id: '8',
-                skill: 'Next JS'
+                skill: 'CSS 3'
             },
             {
                 id: '9',
-                skill: 'VUE JS'
+                skill: 'Next JS'
             },
             {
                 id: '10',
-                skill: 'HTML 5'
+                skill: 'VUE JS'
             },
         ]
     },
@@ -214,18 +214,26 @@ export const webDevSkills = [
         skillslist: [
             {
                 id: '1',
-                skill: 'Firebase'
+                skill: 'Node JS'
             },
             {
                 id: '2',
-                skill: 'Formspark | Form Submission'
+                skill: 'Express JS'
             },
             {
                 id: '3',
-                skill: 'PHP'
+                skill: 'MongoDB'
             },
             {
                 id: '4',
+                skill: 'Firebase'
+            },
+            {
+                id: '5',
+                skill: 'Formspark (Form Submission)'
+            },
+            {
+                id: '6',
                 skill: 'MySQL'
             },
         ]
@@ -266,19 +274,19 @@ export const webDevSkills = [
             },
             {
                 id: '2',
-                skill: 'Asana'
-            },
-            {
-                id: '3',
                 skill: 'Jira'
             },
             {
+                id: '3',
+                skill: 'Asana'
+            },
+            {
                 id: '4',
-                skill: 'VS Code Editor'
+                skill: 'VS Code'
             },
             {
                 id: '5',
-                skill: 'Local by Flywheel'
+                skill: 'Visual Studio'
             },
         ]
     },
@@ -288,11 +296,14 @@ export const aboutme = [
     {
         id: 'aboutme',
         title: 'HELLO',
-        description: 'I am a front-end web developer. I like to build websites using React.js and Taiwind.css. I am a team player and I have professional experience working as a team lead and managing small teams.',
+        // description: 'I am a front-end web developer. I like to build websites using React.js and Taiwind.css. I am a team player and I have professional experience working as a team lead and managing small teams.',
+        descriptionone: '\tI am detail-oriented software developer experienced in creating and optimizing web applications using React.js, TypeScript, and Tailwind CSS.',
+        descriptiontwo: '\tSkilled in improving performance and scalability, integrating APIs, and maintaining high code quality through hands-on development and collaboration.',
+        descriptiontree: '\tRecently expanded practical knowledge in Node.js and MongoDB through advanced education and applied it to new projects.',
         resume: resumePDF,
         img: volodymyrImg,
         name: 'Volodymyr Ruzhak',
-        position: 'Front-end Web Developer',
+        position: 'Software Developer',
         linkedIn: 'https://www.linkedin.com/in/volodymyr-ruzhak-326585138/',
         email: 'mailto:volodymyr.ruzhak@dcmail.ca',
         linkedInImg: linkedIn,

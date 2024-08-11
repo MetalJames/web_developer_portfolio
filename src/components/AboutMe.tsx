@@ -8,7 +8,9 @@ const AboutMe = () => {
                 <div key={item.id} className='flex sm:flex-row flex-col w-full justify-center items-center p-6'>
                     <div className='sm:w-[50%] md:w-[40%] w-full flex flex-col items-center'>
                         <h2 className='text-2xl pb-6'>{item.title}</h2>
-                        <p className='md:max-w-[70%] max-w-[90%] text-center'>{item.description}</p>
+                        <p className='md:max-w-[75%] max-w-[90%] text-justify indent-10'>{item.descriptionone}</p><br />
+                        <p className='md:max-w-[75%] max-w-[90%] text-justify indent-10'>{item.descriptiontwo}</p><br />
+                        <p className='md:max-w-[75%] max-w-[90%] text-justify indent-10'>{item.descriptiontree}</p>
                         <a href={item.resume} className='sm:pt-12 pt-6 sm:pb-6 pb-12'>
                             <button className='bg-transparent hover:bg-[#29caba] font-semibold hover:text-white py-2 px-4 border downloadresume hover:border-transparent rounded transition-all'>Download Resume</button>
                         </a>
