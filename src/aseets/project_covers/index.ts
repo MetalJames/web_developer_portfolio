@@ -13,6 +13,8 @@ import todofirebase from './todofirebase.png';
 import triviaquiz from './trivia_game.png';
 import employeeboard from './employee_board.png';
 import cfbank from './cfbank.png';
+import transportationsystem from './transportationsystem.png';
+import elibrary from './elibrary.png';
 
 export {
     aghReactjs,
@@ -29,5 +31,7 @@ export {
     todofirebase,
     triviaquiz,
     employeeboard,
-    cfbank
+    cfbank,
+    transportationsystem,
+    elibrary
 }

@@ -1,4 +1,4 @@
-import { aghReactjs, chevysonic, fitness, GPT3, realEstate, tamagotchi, techCityOshawa, hoobank, travel, pcmaxrepair, youtubeclone, todofirebase, triviaquiz, employeeboard, cfbank } from '../aseets/project_covers';
+import { aghReactjs, chevysonic, fitness, GPT3, realEstate, tamagotchi, techCityOshawa, hoobank, travel, pcmaxrepair, youtubeclone, todofirebase, triviaquiz, employeeboard, cfbank, transportationsystem, elibrary } from '../aseets/project_covers';
 import volodymyrImg from '../aseets/volodymyr.jpeg';
 import email from '../aseets/email.png';
 import linkedIn from '../aseets/linkedIn.png';
@@ -52,6 +52,24 @@ export const projects = [
         img: cfbank
     },
     {
+        id: 'transportationsystem',
+        title: 'RoadLink Freight Services',
+        smallDiscription: 'Road Transportation Managment',
+        buildWithTitle: 'Build with:',
+        buildWith: 'React JS, TypeScript, Tailwind CSS, Mongo BD, Node JS',
+        link: 'https://road-freight-transportation.vercel.app/',
+        img: transportationsystem
+    },
+    {
+        id: 'elibrary',
+        title: 'Condor eLibrary',
+        smallDiscription: 'Get Books Online',
+        buildWithTitle: 'Build with:',
+        buildWith: 'React JS, TypeScript, Tailwind CSS',
+        link: 'https://condor-e-library.vercel.app/',
+        img: elibrary
+    },
+    {
         id: 'employeeboard',
         title: 'Employee Board',
         smallDiscription: 'Edit info/add tags to employee',
@@ -62,7 +80,7 @@ export const projects = [
     },
     {
         id: 'chevysonic2018',
-        title: 'Chevy Sonic 2018 LT React JS',
+        title: 'Chevy Sonic 2018 LT',
         smallDiscription: 'Car Specifications and Details',
         buildWithTitle: 'Build with:',
         buildWith: 'React JS / Material UI 5',
@@ -79,13 +97,31 @@ export const projects = [
         img: todofirebase
     },
     {
+        id: 'tamagotchigame',
+        title: 'Tamagotchi Game',
+        smallDiscription: 'Game using DOM-manipulation',
+        buildWithTitle: 'Build with:',
+        buildWith: 'JavaScript / DOM / GSAP 3 / SVG',
+        link: 'https://tamagotchi-pet-metaljames.vercel.app/',
+        img: tamagotchi
+    },
+    {
         id: 'aghReact',
-        title: 'AGH React JS',
+        title: 'Advanced Gaming Hardware',
         smallDiscription: 'E-commerce tech shop',
         buildWithTitle: 'Build with:',
         buildWith: 'React JS / Commerce JS / Stripe / Rapid API',
         link: 'https://agh-react-js.netlify.app/',
         img: aghReactjs
+    },
+    {
+        id: 'fitnessapp',
+        title: 'My Fitness',
+        smallDiscription: 'All about fitness',
+        buildWithTitle: 'Build with:',
+        buildWith: 'React JS / Material UI 5 / Rapid API',
+        link: 'https://fitness-exercises-app-opal.vercel.app/',
+        img: fitness
     },
     {
         id: 'myyoutube',
@@ -96,45 +132,36 @@ export const projects = [
         link: 'https://my-youtube-video.netlify.app/',
         img: youtubeclone
     },
-    {
-        id: 'fitnessapp',
-        title: 'My Fitness React JS',
-        smallDiscription: 'All about fitness',
-        buildWithTitle: 'Build with:',
-        buildWith: 'React JS / Material UI 5 / Rapid API',
-        link: 'https://fitness-exercises-app-opal.vercel.app/',
-        img: fitness
-    },
-    {
-        id: 'travelapp',
-        title: 'Travel the World React JS',
-        smallDiscription: 'Travel guid app',
-        buildWithTitle: 'Build with:',
-        buildWith: 'React JS / Material UI 5 / JSON',
-        link: 'https://travel-the-world-react-js.netlify.app/',
-        img: travel
-    },
+    // {
+    //     id: 'travelapp',
+    //     title: 'Travel the World React JS',
+    //     smallDiscription: 'Travel guid app',
+    //     buildWithTitle: 'Build with:',
+    //     buildWith: 'React JS / Material UI 5 / JSON',
+    //     link: 'https://travel-the-world-react-js.netlify.app/',
+    //     img: travel
+    // },
     {
         id: 'realestateapp',
-        title: 'Real Estate Next.js',
+        title: 'Real Estate',
         smallDiscription: 'Buy or Rent Property',
         buildWithTitle: 'Build with:',
         buildWith: 'Next JS / Chakra UI / Rapid API',
         link: 'https://real-estate-app-next-js.vercel.app/',
         img: realEstate
     },
-    {
-        id: 'gpt3app',
-        title: 'GPT-3 OpenAI React JS',
-        smallDiscription: 'Demo of AI Builder',
-        buildWithTitle: 'Build with:',
-        buildWith: 'React JS / Custom CSS',
-        link: 'https://modern-ui-ux-gpt3-neon.vercel.app/',
-        img: GPT3
-    },
+    // {
+    //     id: 'gpt3app',
+    //     title: 'GPT-3 OpenAI React JS',
+    //     smallDiscription: 'Demo of AI Builder',
+    //     buildWithTitle: 'Build with:',
+    //     buildWith: 'React JS / Custom CSS',
+    //     link: 'https://modern-ui-ux-gpt3-neon.vercel.app/',
+    //     img: GPT3
+    // },
     {
         id: 'techoshawa',
-        title: 'Teaching City Oshawa Vue JS',
+        title: 'Teaching City Oshawa',
         smallDiscription: 'Collaborative Project',
         buildWithTitle: 'Build with:',
         buildWith: 'Vue JS / JavaScript / JSON',
@@ -149,15 +176,6 @@ export const projects = [
         buildWith: 'React JS / Tailwind CSS',
         link: 'https://hoobank-modern-bankapp.netlify.app/',
         img: hoobank
-    },
-    {
-        id: 'tamagotchigame',
-        title: 'Tamagotchi Game',
-        smallDiscription: 'Game using DOM-manipulation',
-        buildWithTitle: 'Build with:',
-        buildWith: 'JavaScript / DOM / GSAP 3 / SVG',
-        link: 'https://tamagotchi-pet-metaljames.vercel.app/',
-        img: tamagotchi
     },
 ]
 

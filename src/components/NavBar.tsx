@@ -37,17 +37,17 @@ const NavBar = () => {
             </ul>
             <p className='w-full text-right pr-4 sm:hidden block' onClick={() => setOpen((prev) => (!prev))}>MENU</p>
             <div className={`${open ? 'flex' : 'hidden'}`}>
-                <div className='w-[100vw] h-[100vh] absolute top-0 left-0 bg-[#F5F5F5] flex flex-col items-end overflow-hidden'>
+                <div id='openedMenu' className={`w-[100vw] h-[100vh] absolute top-0 left-0 flex flex-col items-end overflow-hidden ${theme === 'dark' ? 'bg-[hsl(var(--bg--dark))]' : 'bg-[hsl(var(--bg--light))]'}`}>
                     <div className='flex justify-between items-center w-full p-6'>
-                        {lightLogo}
+                        {theme === 'dark' ? darkLogo : lightLogo}
                         <h4 className={`${open ? 'flex' : 'hidden'} text-black`} onClick={() => setOpen((prev) => (!prev))}>
-                            <AiOutlineCloseCircle size='2.5rem' color='black' />
+                            <AiOutlineCloseCircle size='2.5rem' color={theme === 'dark' ? '#29caba' : 'black'} />
                         </h4>
                     </div>
                     <div className='flex flex-wrap w-full h-[60%]'>
                         {navLinks.map(link => (
                             <div key={link.id} className={`
-                            w-[50%] h-[50%] flex justify-center items-center text-black
+                            w-[50%] h-[50%] flex justify-center items-center ${theme === 'dark' ? 'text-[#29caba]' : 'text-black'}
                             ${link.id === 'projects' && 'border-r-2 border-b-2'}
                             ${link.id === 'skills' && 'border-l-2 border-b-2'}
                             ${link.id === 'aboutme' && 'border-r-2 border-t-2'}
@@ -61,12 +61,12 @@ const NavBar = () => {
                         ))}
                     </div>
                     <div className='flex justify-between items-center w-full p-6'>
-                        <a href='https://github.com/MetalJames' target='_blank'><AiFillGithub size='3rem' color='black'/></a>
-                        <a href='https://www.linkedin.com/in/volodymyr-ruzhak-326585138/' target='_blank'><AiFillLinkedin size='3rem' color='black'/></a>
+                        <a href='https://github.com/MetalJames' target='_blank'><AiFillGithub size='3rem' color={theme === 'dark' ? '#29caba' : 'black'}/></a>
+                        <a href='https://www.linkedin.com/in/volodymyr-ruzhak-326585138/' target='_blank'><AiFillLinkedin size='3rem' color={theme === 'dark' ? '#29caba' : 'black'}/></a>
                     </div>
                     <div className='flex flex-col items-center justify-center text-black w-full'>
-                        <h4 className='font-poppins font-light text-[16px] leading-[30px]'>All Rights Reserved</h4>
-                        <h4 className='font-poppins font-light text-[16px] leading-[30px]'>Copyright © 2023 Volodymyr Ruzhak</h4>
+                        <h4 className={`font-poppins font-light text-[16px] leading-[30px] ${theme === 'dark' ? 'text-[#29caba]' : 'text-black'}`}>All Rights Reserved</h4>
+                        <h4 className={`font-poppins font-light text-[16px] leading-[30px] ${theme === 'dark' ? 'text-[#29caba]' : 'text-black'}`}>Copyright © 2024 Volodymyr Ruzhak</h4>
                     </div>
                 </div>
             </div>
