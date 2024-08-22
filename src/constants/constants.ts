@@ -248,7 +248,7 @@ export const webDevSkills = [
             },
             {
                 id: '5',
-                skill: 'Formspark (Form Submission)'
+                skill: 'Formspark'
             },
             {
                 id: '6',
