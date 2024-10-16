@@ -2,7 +2,8 @@ import { aghReactjs, chevysonic, fitness, GPT3, realEstate, tamagotchi, techCity
 import volodymyrImg from '../aseets/volodymyr.jpeg';
 import email from '../aseets/email.png';
 import linkedIn from '../aseets/linkedIn.png';
-import resumePDF from '../aseets/Volodymyr_Ruzhak_CV.pdf';
+// import resumePDF from '../aseets/Volodymyr_Ruzhak_CV.pdf';
+import resumePDF from '../aseets/James_Ruzhak-Resume.pdf';
 
 export const navLinks = [
     {
@@ -322,8 +323,8 @@ export const aboutme = [
         img: volodymyrImg,
         name: 'James Ruzhak',
         position: 'Software Developer',
-        linkedIn: 'https://www.linkedin.com/in/volodymyr-ruzhak-326585138/',
-        email: 'mailto:volodymyr.ruzhak@dcmail.ca',
+        linkedIn: 'https://www.linkedin.com/in/james-ruzhak-326585138/',
+        email: 'mailto:jamesruzhak@gmail.com',
         linkedInImg: linkedIn,
         emailImg: email,
     },
