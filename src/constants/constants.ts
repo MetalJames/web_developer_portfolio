@@ -320,7 +320,7 @@ export const aboutme = [
         descriptiontree: '\tRecently expanded practical knowledge in Node.js and MongoDB through advanced education and applied it to new projects.',
         resume: resumePDF,
         img: volodymyrImg,
-        name: 'Volodymyr Ruzhak',
+        name: 'James Ruzhak',
         position: 'Software Developer',
         linkedIn: 'https://www.linkedin.com/in/volodymyr-ruzhak-326585138/',
         email: 'mailto:volodymyr.ruzhak@dcmail.ca',
