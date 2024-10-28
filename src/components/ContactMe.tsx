@@ -16,7 +16,7 @@ type ServiceMessage = {
 const ContactMe = () => {
     const formId = "CxKU3VSl";
     const formSparkUrl = `https://submit-form.com/${formId}`;
-    const recaptchaKey = "6LepcP8kAAAAAGxI9BguXECVdyLG5BXO0QUDIEAu";
+    const recaptchaKey = "6LctSmIlAAAAAO2mslW6owHHB6SimUIUUm0su12_";
     const recaptchaRef = useRef<any>();
 
     const regName = /^[a-zA-Z ]+$/;
