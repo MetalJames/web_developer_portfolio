@@ -1,4 +1,4 @@
-import { aghReactjs, chevysonic, fitness, GPT3, realEstate, tamagotchi, techCityOshawa, hoobank, travel, pcmaxrepair, youtubeclone, todofirebase, triviaquiz, employeeboard, cfbank, transportationsystem, elibrary } from '../aseets/project_covers';
+import { mobileHomeScreenEditor, chevysonic, fitness, GPT3, realEstate, tamagotchi, techCityOshawa, hoobank, travel, pcmaxrepair, youtubeclone, todofirebase, triviaquiz, employeeboard, cfbank, transportationsystem, elibrary } from '../aseets/project_covers';
 import volodymyrImg from '../aseets/volodymyr.jpeg';
 import email from '../aseets/email.png';
 import linkedIn from '../aseets/linkedIn.png';
@@ -44,13 +44,13 @@ export const projects = [
         img: triviaquiz
     },
     {
-        id: 'cfbank',
-        title: 'Capital Finance Bank',
-        smallDiscription: 'Your secure financial partner',
+        id: 'mobileappeditor',
+        title: 'Mobile Home Screen Editor',
+        smallDiscription: 'Create Your Own Mobile App',
         buildWithTitle: 'Build with:',
-        buildWith: 'React JS, TypeScript, Tailwind CSS, Mongo DB, Node JS',
-        link: 'https://capital-finance-bank.vercel.app/',
-        img: cfbank
+        buildWith: 'React JS(Context API), TypeScript, Tailwind CSS',
+        link: 'https://mobile-home-screen-editor.vercel.app/',
+        img: mobileHomeScreenEditor
     },
     {
         id: 'transportationsystem',
@@ -71,13 +71,13 @@ export const projects = [
         img: elibrary
     },
     {
-        id: 'employeeboard',
-        title: 'Employee Board',
-        smallDiscription: 'Edit info/add tags to employee',
+        id: 'cfbank',
+        title: 'Capital Finance Bank',
+        smallDiscription: 'Your secure financial partner',
         buildWithTitle: 'Build with:',
-        buildWith: 'React JS, TypeScript, Tailwind CSS, JSON',
-        link: 'https://employee-board.vercel.app/',
-        img: employeeboard
+        buildWith: 'React JS, TypeScript, Tailwind CSS, Mongo DB, Node JS',
+        link: 'https://capital-finance-bank.vercel.app/',
+        img: cfbank
     },
     {
         id: 'chevysonic2018',
@@ -98,6 +98,15 @@ export const projects = [
         img: todofirebase
     },
     {
+        id: 'employeeboard',
+        title: 'Employee Board',
+        smallDiscription: 'Edit info/add tags to employee',
+        buildWithTitle: 'Build with:',
+        buildWith: 'React JS, TypeScript, Tailwind CSS, JSON',
+        link: 'https://employee-board.vercel.app/',
+        img: employeeboard
+    },
+    {
         id: 'tamagotchigame',
         title: 'Tamagotchi Game',
         smallDiscription: 'Game using DOM-manipulation',
@@ -106,15 +115,15 @@ export const projects = [
         link: 'https://tamagotchi-pet-metaljames.vercel.app/',
         img: tamagotchi
     },
-    {
-        id: 'aghReact',
-        title: 'Advanced Gaming Hardware',
-        smallDiscription: 'E-commerce tech shop',
-        buildWithTitle: 'Build with:',
-        buildWith: 'React JS / Commerce JS / Stripe / Rapid API',
-        link: 'https://agh-react-js.netlify.app/',
-        img: aghReactjs
-    },
+    // {
+    //     id: 'aghReact',
+    //     title: 'Advanced Gaming Hardware',
+    //     smallDiscription: 'E-commerce tech shop',
+    //     buildWithTitle: 'Build with:',
+    //     buildWith: 'React JS / Commerce JS / Stripe / Rapid API',
+    //     link: 'https://agh-react-js.netlify.app/',
+    //     img: aghReactjs
+    // },
     {
         id: 'fitnessapp',
         title: 'My Fitness',

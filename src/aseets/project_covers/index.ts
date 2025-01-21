@@ -1,4 +1,4 @@
-import aghReactjs from './agh-reactjs.png';
+import mobileHomeScreenEditor from './mobile_app_editor.png';
 import chevysonic from './chevysonic.png';
 import fitness from './fitness.png';
 import GPT3 from './GPT3.png';
@@ -17,7 +17,7 @@ import transportationsystem from './transportationsystem.png';
 import elibrary from './elibrary.png';
 
 export {
-    aghReactjs,
+    mobileHomeScreenEditor,
     chevysonic,
     fitness,
     GPT3,

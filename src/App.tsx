@@ -8,10 +8,10 @@ function App() {
   useEffect(() => {
     let timer = setTimeout(() => {
       setOpacity(1);
-    }, 500); // Increase opacity over 1 second
+    }, 500);
 
-    return () => clearTimeout(timer); // Clean up timer when component unmounts
-  }, []); // Run only once when component mounts
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <div style={{opacity}}  className="w-full overflow-hidden">
