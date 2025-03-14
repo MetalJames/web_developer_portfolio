@@ -1,22 +1,31 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { navLinks } from "../constants/constants";
-import dark_logo from '../aseets/dark_logo.svg'
-import light_logo from '../aseets/light_logo.svg'
-import ThemeSwitcher from './ThemeSwitcher';
+import { dark_logo, light_logo } from '../aseets/'
+import { ThemeSwitcher } from '.';
 import { AiFillGithub, AiFillLinkedin, AiOutlineCloseCircle } from "react-icons/ai";
-// custom hook for setting theme and keep it in local storage in case if website revisited
 import useLocalStorage from "../hooks/useLocalStorage";
 
-const NavBar = () => {
+export const NavBar = () => {
 
-    // const [isCurrent, setIsCurrent] = useState('projects');
-    // ${isCurrent === link.id ? 'text-[#29caba]' : 'text-current'}
     const [open, setOpen] = useState(false);
     const top = () => window.scrollTo(0, 0);
-    const defaultTheme = window.matchMedia('(prefers-color-scheme : dark)');
-    const [theme, setTheme] = useLocalStorage('dev-portfolio.scheme', defaultTheme ? 'dark' : 'light');
+    
+    const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const [theme, setTheme] = useLocalStorage('dev-portfolio.scheme', prefersDarkMode ? 'dark' : 'light');
+
     const darkLogo = <img src={dark_logo} alt='vr dark theme logo' className='w-[3rem] cursor-pointer' onClick={() => top()}/>;
     const lightLogo = <img src={light_logo} alt='vr light theme logo' className='w-[3rem] cursor-pointer' onClick={() => top()}/>;
+
+    useEffect(() => {
+        const handleThemeChange = (e: MediaQueryListEvent) => {
+            setTheme(e.matches ? 'dark' : 'light');
+        };
+
+        const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+        mediaQuery.addEventListener('change', handleThemeChange);
+
+        return () => mediaQuery.removeEventListener('change', handleThemeChange);
+    }, []);
 
     return (
         <nav className='w-full flex py-6 justify-between items-center navbar'>
@@ -29,7 +38,6 @@ const NavBar = () => {
                         `}
                     >
                         <a href={`#${link.id}`}>
-                        {/* <a href={`#${link.id}`} onClick={() => setIsCurrent(link.id)}> */}
                             <p className='navbarUnderline'>{link.title}</p>
                         </a>
                     </li>
@@ -73,6 +81,4 @@ const NavBar = () => {
             <ThemeSwitcher theme={theme} setTheme={setTheme} />
         </nav>
     )
-}
-
-export default NavBar
+};

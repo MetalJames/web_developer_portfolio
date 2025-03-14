@@ -1,10 +1,7 @@
-const Footer = () => {
-    return (
-        <div className='flex flex-col items-center justify-center sm:py-3 py-4'>
-            <p className=' font-poppins font-light text-[16px] leading-[30px]'>All Rights Reserved</p>
-            <p className=' font-poppins font-light text-[16px] leading-[30px]'>Copyright © 2025 James Ruzhak</p>
-        </div>
-    )
-}
-
-export default Footer
+export const Footer = () => (
+    <div className='text-center sm:py-3 py-4'>
+        <p className='font-poppins font-light text-[16px] leading-[30px]'>
+            All Rights Reserved <br /> Copyright &copy; {new Date().getFullYear()} James Ruzhak
+        </p>
+    </div>
+);

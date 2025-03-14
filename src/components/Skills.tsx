@@ -1,6 +1,6 @@
 import { webDevSkills } from '../constants/constants';
 
-const Skills = () => {
+export const Skills = () => {
     return (
         <div id='skills' className='sm:w-[92%] md:w-[80%] xs:w-[70%] m-[auto] pt-[6rem]'>
             <h1 className='text-3xl font-poppins font-bold text-center py-6'>SKILLS</h1>
@@ -18,6 +18,4 @@ const Skills = () => {
             </div>
         </div>
     )
-}
-
-export default Skills
+};

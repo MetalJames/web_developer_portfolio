@@ -1,13 +1,13 @@
 import { projects } from '../constants/constants';
 
-const Projects = () => {
+export const Projects = () => {
+    
+    const first = ['pcmaxrepair', 'mobileappeditor', 'cfbank'];
+    const middle = ['triviaquizgame', 'transportationsystem', 'employeeboard'];
+    const last = ['artifactband', 'elibrary', 'tamagotchigame'];
 
-    const first = ['pcmaxrepair', 'transportationsystem', 'chevysonic2018', 'tamagotchigame', 'travelapp', 'realestateapp'];
-    const middle = ['triviaquizgame', 'elibrary', 'todofirebase', 'fitnessapp', 'techoshawa'];
-    const last = ['mobileappeditor', 'cfbank', 'employeeboard', 'myyoutube', 'hoobank'];
-
-    const mdFirst = ['pcmaxrepair', 'mobileappeditor', 'elibrary', 'chevysonic2018', 'employeeboard', 'fitnessapp', 'realestateapp'];
-    const mdLast = ['triviaquizgame', 'transportationsystem', 'cfbank', 'tamagotchigame', 'todofirebase', 'myyoutube', 'techoshawa'];
+    const mdFirst = ['pcmaxrepair', 'artifactband', 'transportationsystem', 'cfbank'];
+    const mdLast = ['triviaquizgame', 'mobileappeditor', 'elibrary', 'employeeboard'];
 
     return (
         <div id='projects' className='pt-[6rem]'>
@@ -42,6 +42,4 @@ const Projects = () => {
             </div>
         </div>
     )
-}
-
-export default Projects
+};

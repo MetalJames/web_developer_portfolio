@@ -1,7 +1,7 @@
-export { default as NavBar } from './NavBar';
-// export { default as Slider } from './Slider';
-export { default as Footer } from './Footer';
-export { default as AboutMe } from './AboutMe';
-export { default as ContactMe } from './ContactMe';
-export { default as Skills } from './Skills';
-export { default as Projects } from './Projects';
+export { NavBar } from './NavBar';
+export { Footer } from './Footer';
+export { AboutMe } from './AboutMe';
+export { ContactMe } from './ContactMe';
+export { Skills } from './Skills';
+export { Projects } from './Projects';
+export { ThemeSwitcher } from './ThemeSwitcher';

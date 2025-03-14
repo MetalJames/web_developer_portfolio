@@ -1,4 +1,4 @@
-import React, { ChangeEvent, FormEvent, useRef, useState } from 'react';
+import { ChangeEvent, FormEvent, useRef, useState } from 'react';
 import axios from 'axios';
 import ReCAPTCHA from 'react-google-recaptcha';
 
@@ -13,7 +13,7 @@ type ServiceMessage = {
     text: string;
 };
 
-const ContactMe = () => {
+export const ContactMe = () => {
     const formId = "CxKU3VSl";
     const formSparkUrl = `https://submit-form.com/${formId}`;
     const recaptchaKey = "6LctSmIlAAAAAO2mslW6owHHB6SimUIUUm0su12_";
@@ -179,5 +179,3 @@ const ContactMe = () => {
         </div>
     );
 };
-
-export default ContactMe;

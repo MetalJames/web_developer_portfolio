@@ -6,7 +6,7 @@ type ThemeSwitcherProps = {
     setTheme: any,
 }
 
-const ThemeSwitcher = (props: ThemeSwitcherProps) => {
+export const ThemeSwitcher = (props: ThemeSwitcherProps) => {
 
     const { theme, setTheme } = props;
 
@@ -29,5 +29,3 @@ const ThemeSwitcher = (props: ThemeSwitcherProps) => {
         </aside>
     );
 };
-
-export default ThemeSwitcher;

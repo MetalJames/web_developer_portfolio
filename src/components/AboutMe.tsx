@@ -1,6 +1,6 @@
 import { aboutme } from '../constants/constants';
 
-const AboutMe = () => {
+export const AboutMe = () => {
     return (
         <div id='aboutme' className='pt-[6rem] md:px-24 sm:px-0 px-3 sm:pb-4 pb-2'>
             <h1 className='text-3xl font-poppins font-bold text-center py-6'>ABOUT ME</h1>
@@ -30,6 +30,4 @@ const AboutMe = () => {
             ))}
         </div>
     )
-}
-
-export default AboutMe
+};
