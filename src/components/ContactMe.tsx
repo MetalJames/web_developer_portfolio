@@ -1,4 +1,4 @@
-import { ChangeEvent, FormEvent, useRef, useState } from 'react';
+import React, { ChangeEvent, FormEvent, useRef, useState } from 'react';
 import axios from 'axios';
 import ReCAPTCHA from 'react-google-recaptcha';
 
@@ -16,7 +16,7 @@ type ServiceMessage = {
 export const ContactMe = () => {
     const formId = "tbgVBsSzE";
     const formSparkUrl = `https://submit-form.com/${formId}`;
-    const recaptchaKey = "6LeEvPQqAAAAAFE2aq9ClAUKws3OuaLDf38KCEdu";
+    const recaptchaKey = "6LctSmIlAAAAAO2mslW6owHHB6SimUIUUm0su12_";
     const recaptchaRef = useRef<any>();
 
     const regName = /^[a-zA-Z ]+$/;
