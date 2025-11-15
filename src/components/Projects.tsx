@@ -2,12 +2,12 @@ import { projects } from '../constants/constants';
 
 export const Projects = () => {
     
-    const first = ['pcmaxrepair', 'mobileappeditor', 'cfbank'];
-    const middle = ['triviaquizgame', 'transportationsystem', 'employeeboard'];
-    const last = ['artifactband', 'elibrary', 'tamagotchigame'];
+    const first = ['pcmaxrepair', 'mobileappeditor'];
+    const middle = ['triviaquizgame', 'transportationsystem'];
+    const last = ["artifactband", "cfbank"];
 
-    const mdFirst = ['pcmaxrepair', 'artifactband', 'transportationsystem', 'cfbank'];
-    const mdLast = ['triviaquizgame', 'mobileappeditor', 'elibrary', 'employeeboard'];
+    const mdFirst = ['pcmaxrepair', 'artifactband', 'transportationsystem'];
+    const mdLast = ['triviaquizgame', 'mobileappeditor', 'cfbank'];
 
     return (
         <div id='projects' className='pt-[6rem]'>

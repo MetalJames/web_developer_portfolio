@@ -11,7 +11,7 @@ export const AboutMe = () => {
                         <p className='md:max-w-[75%] max-w-[90%] sm:text-justify text-left indent-10'>{item.descriptionone}</p><br />
                         <p className='md:max-w-[75%] max-w-[90%] sm:text-justify text-left indent-10'>{item.descriptiontwo}</p><br />
                         <p className='md:max-w-[75%] max-w-[90%] sm:text-justify text-left indent-10'>{item.descriptiontree}</p>
-                        <a href={item.resume} className='sm:pt-12 pt-6 sm:pb-6 pb-12'>
+                        <a href={item.resume} target="_blank" className='sm:pt-12 pt-6 sm:pb-6 pb-12'>
                             <button className='bg-transparent hover:bg-[#29caba] font-semibold hover:text-white py-2 px-4 border downloadresume hover:border-transparent rounded transition-all'>Download Resume</button>
                         </a>
                     </div>

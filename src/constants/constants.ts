@@ -67,15 +67,15 @@ export const projects = [
         link: 'https://road-freight-transportation.vercel.app/',
         img: transportationsystem
     },
-    {
-        id: 'elibrary',
-        title: 'Condor eLibrary',
-        smallDiscription: 'Get Books Online',
-        buildWithTitle: 'Build with:',
-        buildWith: 'React JS, TypeScript, Tailwind CSS',
-        link: 'https://condor-e-library.vercel.app/',
-        img: elibrary
-    },
+    // {
+    //     id: 'elibrary',
+    //     title: 'Condor eLibrary',
+    //     smallDiscription: 'Get Books Online',
+    //     buildWithTitle: 'Build with:',
+    //     buildWith: 'React JS, TypeScript, Tailwind CSS',
+    //     link: 'https://condor-e-library.vercel.app/',
+    //     img: elibrary
+    // },
     {
         id: 'cfbank',
         title: 'Capital Finance Bank',
@@ -85,24 +85,24 @@ export const projects = [
         link: 'https://capital-finance-bank.vercel.app/',
         img: cfbank
     },
-    {
-        id: 'employeeboard',
-        title: 'Employee Board',
-        smallDiscription: 'Employee Management UI with tag-based filtering',
-        buildWithTitle: 'Build with:',
-        buildWith: 'React JS, TypeScript, Tailwind CSS, JSON',
-        link: 'https://employee-board.vercel.app/',
-        img: employeeboard
-    },
-    {
-        id: 'tamagotchigame',
-        title: 'Tamagotchi Game',
-        smallDiscription: 'Interactive Tamagotchi pet simulator with animations',
-        buildWithTitle: 'Build with:',
-        buildWith: 'JavaScript / DOM / GSAP 3 / SVG',
-        link: 'https://tamagotchi-pet-metaljames.vercel.app/',
-        img: tamagotchi
-    }
+    // {
+    //     id: 'employeeboard',
+    //     title: 'Employee Board',
+    //     smallDiscription: 'Employee Management UI with tag-based filtering',
+    //     buildWithTitle: 'Build with:',
+    //     buildWith: 'React JS, TypeScript, Tailwind CSS, JSON',
+    //     link: 'https://employee-board.vercel.app/',
+    //     img: employeeboard
+    // },
+    // {
+    //     id: 'tamagotchigame',
+    //     title: 'Tamagotchi Game',
+    //     smallDiscription: 'Interactive Tamagotchi pet simulator with animations',
+    //     buildWithTitle: 'Build with:',
+    //     buildWith: 'JavaScript / DOM / GSAP 3 / SVG',
+    //     link: 'https://tamagotchi-pet-metaljames.vercel.app/',
+    //     img: tamagotchi
+    // }
 ]
 
 export const webDevSkills = [
@@ -112,14 +112,14 @@ export const webDevSkills = [
         skillslist: [
             { id: '1', skill: 'React JS' },
             { id: '2', skill: 'TypeScript' },
-            { id: '3', skill: 'Tailwind CSS' },
-            { id: '4', skill: 'JavaScript' },
-            { id: '5', skill: 'HTML 5' },
+            { id: '3', skill: 'Redux Toolkit' },
+            { id: '4', skill: 'React Hook Form' },
+            { id: '5', skill: 'JavaScript (ES6+)' },
             { id: '6', skill: 'Context API' },
             { id: '7', skill: 'useReducer' },
             { id: '8', skill: 'REST API' },
-            { id: '9', skill: 'CSS 3' },
-            { id: '10', skill: 'Next.js' }
+            { id: '9', skill: 'Tailwind CSS' },
+            { id: '10', skill: 'Bootstrap & Material UI' }
         ]
     },
     {
@@ -128,32 +128,35 @@ export const webDevSkills = [
         skillslist: [
             { id: '1', skill: 'Node JS' },
             { id: '2', skill: 'Express JS' },
-            { id: '3', skill: 'MongoDB' },
-            { id: '4', skill: 'Firebase' },
-            { id: '5', skill: 'Formspark' },
-            { id: '6', skill: 'MySQL' },
+            { id: '3', skill: 'Sequelize ORM' },
+            { id: '4', skill: 'MongoDB' },
+            { id: '5', skill: 'MySQL' },
+            { id: '6', skill: 'Firebase' },
+            { id: '7', skill: 'Zod Validation' },
+            { id: '8', skill: 'Formspark Integration' },
         ]
     },
     {
         id: 'webdesign',
         title: 'Web Design',
         skillslist: [
-            { id: '1', skill: 'Photoshop' },
-            { id: '2', skill: 'Figma' },
-            { id: '3', skill: 'Illustrator' },
-            { id: '4', skill: 'Lightroom' },
-            { id: '5', skill: 'Premier Pro' },
+            { id: '1', skill: 'Figma' },
+            { id: '2', skill: 'Adobe Photoshop' },
+            { id: '3', skill: 'Adobe Illustrator' },
+            { id: '4', skill: 'Adobe Lightroom' },
+            { id: '5', skill: 'Adobe Premier Pro' },
         ]
     },
     {
         id: 'software&tools',
         title: 'Software & Tools',
         skillslist: [
-            { id: '1', skill: 'GitHub' },
+            { id: '1', skill: 'Git/GitHub' },
             { id: '2', skill: 'Jira' },
             { id: '3', skill: 'Asana' },
             { id: '4', skill: 'VS Code' },
             { id: '5', skill: 'Visual Studio' },
+            { id: '6', skill: 'Vercel' },
         ]
     },
 ]
@@ -162,9 +165,15 @@ export const aboutme = [
     {
         id: 'aboutme',
         title: 'HELLO',
-        descriptionone: 'I am detail-oriented software developer experienced in creating and optimizing web applications using React.js, TypeScript, and Tailwind CSS.',
-        descriptiontwo: 'Skilled in improving performance and scalability, integrating APIs, and maintaining high code quality through hands-on development and collaboration.',
-        descriptiontree: 'Recently expanded practical knowledge in Node.js and MongoDB through advanced education and applied it to new projects.',
+        descriptionone: 'I am a detail-oriented software developer with over 7 years of experience building front-end and full-stack web applications.',
+        descriptiontwo: 'I specialize in developing scalable ERP systems, dashboards, and dynamic modules using React.js, TypeScript, Redux, Node.js, and Express.',
+        descriptiontree: 'I have experience refactoring legacy code, integrating APIs, and using Sequelize ORM and Zod for data modeling and validation to deliver high-quality, maintainable solutions.',
+        // descriptionone: 'I am a detail-oriented software developer with 7+ years of experience building front-end and full-stack web applications.',
+        // descriptiontwo: 'Skilled in developing scalable ERP systems, dashboards, and dynamic modules using React.js, TypeScript, Redux, Node.js, and Express.',
+        // descriptiontree: 'Experienced in refactoring legacy code, integrating APIs, and applying Sequelize ORM and Zod for data modeling and validation.',
+        // descriptionone: 'I am detail-oriented software developer experienced in creating and optimizing web applications using React.js, TypeScript, and Tailwind CSS.',
+        // descriptiontwo: 'Skilled in improving performance and scalability, integrating APIs, and maintaining high code quality through hands-on development and collaboration.',
+        // descriptiontree: 'Recently expanded practical knowledge in Node.js and MongoDB through advanced education and applied it to new projects.',
         resume: James_Ruzhak_Resume,
         img: volodymyr,
         name: 'James Ruzhak',
